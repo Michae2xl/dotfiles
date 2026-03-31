@@ -1,31 +1,31 @@
 # dotfiles
 
-Meus arquivos de configuracao do terminal.
+My terminal configuration files.
 
 ## Starship Prompt
 
-Prompt customizado com tema **Catppuccin Mocha** e icones Nerd Font.
+Custom prompt with **Catppuccin Mocha** theme and Nerd Font icons.
 
-### Requisitos
+### Requirements
 
 - [Starship](https://starship.rs/)
-- Uma [Nerd Font](https://www.nerdfonts.com/) (ex: JetBrains Mono Nerd Font)
+- A [Nerd Font](https://www.nerdfonts.com/) (e.g. JetBrains Mono Nerd Font)
 
-### Instalacao
+### Setup
 
 ```bash
-# Instalar Starship
+# Install Starship
 curl -sS https://starship.rs/install.sh | sh
 
-# Instalar Nerd Font (macOS)
+# Install a Nerd Font (macOS)
 brew install --cask font-jetbrains-mono-nerd-font
 
-# Copiar config
+# Copy config
 cp starship/starship.toml ~/.config/starship.toml
 
-# Adicionar no ~/.zshrc
+# Add to ~/.zshrc
 echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 
-# Reiniciar terminal
+# Restart terminal
 source ~/.zshrc
 ```
